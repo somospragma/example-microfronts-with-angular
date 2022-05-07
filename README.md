@@ -23,6 +23,7 @@ Posterior a crear la apliacion, necesitaremos asignar un puerto de trabajo a la 
 Primero se debe de iniciar con los frontend hijos y por ultimo el shell
 
 - Login: `ng s login`
+- Login: `ng s dashboard`
 - Shell: `ng s shell`
 
 
