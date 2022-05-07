@@ -1,0 +1,176 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import "scss/bootstrap/bootstrap.scss";
+@import 'theme.scss';
+
+html,
+body,
+md-sidenav-container,
+.content {
+    height: 100%;
+}
+
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.5;
+    color: #212529;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    margin: 0;
+}
+
+
+a,
+a:visited,
+a:hover {
+    color: #1976d2;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #125699;
+}
+
+.mat-drawer-container {
+    background-color: #fff;
+    color: #212529;
+}
+
+.vh-mat-sidenav-content{
+    height: calc(100vh - 3.5rem);
+}
+
+.mat-sidenav{
+    width: max-content;
+}
+
+.mat-toolbar-row,
+.mat-toolbar-single-row {
+    padding: 0 !important;
+    height: 3.5rem;
+}
+
+.mat-toolbar-multiple-rows {
+    min-height: 3.5rem;
+}
+
+.mat-drawer-inner-container {
+    overflow-x: hidden !important;
+}
+
+.mat-list-base .mat-list-item {
+    font-size: 14px;
+}
+
+.mat-sidena{
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+}
+
+.mat-menu-item{
+    height: 48px !important;
+}
+.no-lateral-padding{
+    padding-left: 0rem !important;
+}
+
+.lateral-padding-right{
+    padding-right: 0rem;
+}
+
+.mat-card {
+  background: #fff;
+  color: #424242;
+}
+
+.mat-card-content {
+    margin-bottom: 5px !important;
+}
+
+.max-content{
+  width: max-content;
+}
+
+.margin-none{
+    margin: 0px;
+}
+
+::placeholder {
+   color: #6c6c6c !important;
+}
+
+.mat-form-field{
+    width: 100%;
+}
+  .input-right-align {
+    text-align: right !important;
+  }
+
+  input.input-right-align::-webkit-outer-spin-button,
+  input.input-right-align::-webkit-inner-spin-button {
+    display: none;
+  }
+
+  input.input-right-align {
+    -moz-appearance: textfield;
+  }
+
+.mat-form-field-appearance-fill .mat-form-field-flex {
+    background-color: #ebebeb;
+}
+.mat-form-field-label {
+    color: #6c6c6c !important;
+}
+
+.mat-form-field-ripple , .mat-focused.mat-form-field-ripple {
+    background-color: #6c6c6c !important;
+}
+.mat-select-value{
+    color: #6c6c6c !important;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-underline::before {
+    background-color: #6c6c6c;
+}
+
+.mat-select-arrow {
+    color: #6c6c6c !important;
+}
+
+.mat-form-field-invalid .mat-form-field-label {
+    color: #f44336 !important;
+}
+
+.mat-form-field.mat-form-field-invalid .mat-form-field-ripple{
+    background-color: #f44336 !important;
+}
+.mat-raised-button.mat-button-disabled:not([class*=mat-elevation-z]) {
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 10%), 0px 2px 2px 0px rgb(0 0 0 / 10%), 0px 1px 5px 0px rgb(0 0 0 / 10%);
+    background-color: #9d9d9d;
+}
+
+.mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {
+    color: #ffffff;
+}
+
+.mat-form-field .mat-select.mat-select-invalid .mat-select-arrow {
+    color: #f44336 !important;
+}
+
+.box {
+    background-color: #EEEEEE;
+    padding: 20px;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+
+

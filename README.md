@@ -1,27 +1,28 @@
-# NgModuleFederation
+# Microfrontends con an
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2.
+Ver documentacion de:
+- [@angular-architects/module-federation](https://www.npmjs.com/package/@angular-architects/module-federation).
+- [@angular-architects/module-federation-tools](https://www.npmjs.com/package/@angular-architects/module-federation-tools)
+## Para crear un nuevo aplicativo
 
-## Development server
+Usar el comando `ng g app nombre-app`, cuando nos pregunte si deseamos usar el routes indicar que si 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Asignar puerto a la aplicacion
 
-## Code scaffolding
+Posterior a crear la apliacion, necesitaremos asignar un puerto de trabajo a la misma, para esto usar el comando: 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+`ng add @angular-architects/module-federation --project nombre-app --port xxxx`
 
-## Build
+## Comandos 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+ - Crear modulo: `ng g m nombe-modulo --project nombre-app`
+ - Crear componente: `ng g c nombe-componente --project nombre-app`
 
-## Running unit tests
+## Arrancar frontends
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Primero se debe de iniciar con los frontend hijos y por ultimo el shell
 
-## Running end-to-end tests
+- Login: `ng s login`
+- Shell: `ng s shell`
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

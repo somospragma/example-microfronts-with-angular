@@ -1,0 +1,48 @@
+<div class="row">
+  <div class="col-12">
+    <div class="row">
+      <mat-toolbar class="col-12" color="primary">
+        <mat-toolbar-row>
+          <button mat-icon-button>
+            <mat-icon (click)="toggleMenu()">menu</mat-icon>
+          </button>
+          <h1>BTG Pactual</h1>
+          <span class="menu-spacer"></span>
+
+        </mat-toolbar-row>
+      </mat-toolbar>
+    </div>
+
+    <mat-sidenav-container [hasBackdrop]="false" class="row" >
+      <mat-sidenav #sidenav
+                   [ngClass]="{'lateral-padding-right': !opened}"
+                   class="no-lateral-padding"
+                   [attr.role]="'dialog'"
+                   [mode]="'over'"
+                   opened="true"
+                   disableClose="true"
+                   [opened]="true">
+        <mat-nav-list>
+          <mat-list-item routerLink="/dashboard" class="mat-menu-item">
+            <mat-icon mat-list-icon>person</mat-icon>
+            <h4 mat-line *ngIf="opened">Dashboard</h4>
+          </mat-list-item>
+          <mat-list-item routerLink="/login" class="mat-menu-item">
+            <mat-icon mat-list-icon>assignment</mat-icon>
+            <h4 mat-line *ngIf="opened">Login</h4>
+          </mat-list-item>
+        </mat-nav-list>
+      </mat-sidenav>
+      <mat-sidenav-content class="col-12">
+        <div class="row justify-content-center">
+          <div class="col-11 col-md-9 vh-mat-sidenav-content pt-4">
+            <ng-container>
+              <router-outlet></router-outlet>
+            </ng-container>
+          </div>
+        </div>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>
+</div>
+
